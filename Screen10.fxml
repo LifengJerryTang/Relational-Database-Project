@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:controller="sample.Screen10Controller" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane accessibleText="NCY" maxHeight="-1.0" maxWidth="-1.0" prefHeight="473.0" prefWidth="650.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Label layoutX="170.0" layoutY="32.0" prefHeight="28.0" prefWidth="381.0" text="Manager-Customer Functionality" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="theaterOverview" layoutX="125.0" layoutY="89.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="184.0" text="Theater Overview"
+                onAction="#theaterOverview"/>
+            <Button fx:id="visitHistory" layoutX="330.0" layoutY="250.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="184.0" text="Visit History"
+                onAction="#visitHistory"/>
+            <Button fx:id="scheduleMovie" layoutX="125.0" layoutY="165.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="184.0" text="Schedule Movie"
+                onAction="#scheduleMovie"/>
+            <Button fx:id="exploreTheater" layoutX="330.0" layoutY="165.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="184.0" text="Explore Theater"
+                onAction="#exploreTheater"/>
+            <Button fx:id="back" layoutX="228.0" layoutY="320.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="184.0" text="Back"
+                onAction="#backToLogin"/>
+            <Button fx:id="viewHistory" layoutX="125.0" layoutY="250.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="184.0" text="View History"
+                onAction="#viewHistory"/>
+            <Button fx:id="exploreMovie" layoutX="330.0" layoutY="89.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="184.0" text="Explore Movie"
+                onAction="#exploreMovie"/>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="sample.ControllerLogin">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Label layoutX="196.0" layoutY="24.0" prefHeight="69.0" prefWidth="264.0" text="Atlanta Movie Login">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="login" layoutX="82.0" layoutY="287.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="151.0" text="Login" onAction="#GetLoginInfo"/>
+            <Button fx:id="register" layoutX="407.0" layoutY="287.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="151.0" text="Register" onAction="#BackToNavi"/>
+            <PasswordField layoutX="195.0" layoutY="214.0" prefHeight="27.0" prefWidth="205.0" fx:id = "password"/>
+            <TextField layoutX="195.0" layoutY="140.0" prefHeight="27.0" prefWidth="205.0" fx:id="username"/>
+            <Label layoutX="82.0" layoutY="142.0" prefHeight="23.0" prefWidth="110.0" text="Username">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="82.0" layoutY="216.0" text="Password">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

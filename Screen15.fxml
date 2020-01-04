@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+
+<VBox fx:controller="sample.Screen15Controller" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+        <children>
+
+            <Text layoutX="232.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Theater">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Text>
+            <Label layoutX="80.0" layoutY="62.0" text="Name">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="theaterNameField" layoutX="120.0" layoutY="57.0" prefHeight="26.0" prefWidth="112.0" />
+            <Label layoutX="348.0" layoutY="60.0" text="Company">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="companyNames" layoutX="415.0" layoutY="57.0" prefHeight="26.0" prefWidth="128.0" >
+                <items>
+
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="4400 Theater Company"/>
+                        <String fx:value="Awesome Theater Company"/>
+                        <String fx:value="AI Theater Company"/>
+                        <String fx:value="EZ Theater Company"/>
+
+                    </FXCollections>
+                </items>
+            </ChoiceBox>
+
+            <Label layoutX="81.0" layoutY="121.0" text="Street Address">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="streetAddressField" layoutX="176.0" layoutY="117.0" prefHeight="26.0" prefWidth="377.0" />
+            <Label layoutX="82.0" layoutY="182.0" text="City">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cityNameField" layoutX="112.0" layoutY="178.0" prefHeight="26.0" prefWidth="89.0" />
+            <Label layoutX="252.0" layoutY="183.0" text="State">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="states" layoutX="290.0" layoutY="179.0" prefHeight="26.0" prefWidth="58.0">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="AL"/>
+                        <String fx:value="AK"/>
+                        <String fx:value="AZ"/>
+                        <String fx:value="AR"/>
+                        <String fx:value="CA"/>
+                        <String fx:value="CO"/>
+                        <String fx:value="CT"/>
+                        <String fx:value="DE"/>
+                        <String fx:value="FL"/>
+                        <String fx:value="GA"/>
+                        <String fx:value="HI"/>
+                        <String fx:value="ID"/>
+                        <String fx:value="IL"/>
+                        <String fx:value="IN"/>
+                        <String fx:value="IA"/>
+                        <String fx:value="KS"/>
+                        <String fx:value="KY"/>
+                        <String fx:value="LA"/>
+                        <String fx:value="ME"/>
+                        <String fx:value="MD"/>
+                        <String fx:value="MA"/>
+                        <String fx:value="MI"/>
+                        <String fx:value="MN"/>
+                        <String fx:value="MS"/>
+                        <String fx:value="MO"/>
+                        <String fx:value="MT"/>
+                        <String fx:value="NE"/>
+                        <String fx:value="NV"/>
+                        <String fx:value="NH"/>
+                        <String fx:value="NJ"/>
+                        <String fx:value="NM"/>
+                        <String fx:value="NY"/>
+                        <String fx:value="NC"/>
+                        <String fx:value="ND"/>
+                        <String fx:value="OH"/>
+                        <String fx:value="OK"/>
+                        <String fx:value="OR"/>
+                        <String fx:value="PA"/>
+                        <String fx:value="RI"/>
+                        <String fx:value="SC"/>
+                        <String fx:value="SD"/>
+                        <String fx:value="TN"/>
+                        <String fx:value="TX"/>
+                        <String fx:value="UT"/>
+                        <String fx:value="VT"/>
+                        <String fx:value="VA"/>
+                        <String fx:value="WA"/>
+                        <String fx:value="WV"/>
+                        <String fx:value="WI"/>
+                        <String fx:value="WY"/>
+
+                    </FXCollections>
+                </items>
+
+            </ChoiceBox>
+            <Label layoutX="393.0" layoutY="184.0" text="Zipcode">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="zipcodeField" layoutX="445.0" layoutY="180.0" prefHeight="26.0" prefWidth="100.0" />
+            <Label layoutX="78.0" layoutY="240.0" text="Capacity">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="capacityField" layoutX="134.0" layoutY="236.0" prefHeight="26.0" prefWidth="90.0" />
+            <Label layoutX="383.0" layoutY="240.0" text="Manager">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="managers" layoutX="445.0" layoutY="237.0" prefHeight="26.0" prefWidth="100.0" />
+
+
+            <Button fx:id="backButton" layoutX="108.0" layoutY="319.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="118.0" text="Back"
+                onAction="#backToManageCompany">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="createButton" layoutX="407.0" layoutY="319.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="118.0" text="Create"
+                onAction="#createTheater">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+    </children>
+    </AnchorPane>
+  </children>
+        </VBox>
