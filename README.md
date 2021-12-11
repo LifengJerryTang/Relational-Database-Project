@@ -16,4 +16,10 @@ The completed project includes the following database elements.
         5. GUI Application for the Database
             -A User Interface Application written in JavaFx, which allows the user to communicate with the database
             
+Other Contributors:
+ - Kai Li
+ - Zhekun Qi
+ - Yiqiong Xiao
+ - Xiang Zhong
+            
         
