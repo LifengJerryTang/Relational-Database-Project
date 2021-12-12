@@ -17,9 +17,9 @@ The completed project includes the following database elements.
             -A User Interface Application written in JavaFx, which allows the user to communicate with the database
             
 Other Contributors:
- - Kai Li
- - Zhekun Qi
- - Yiqiong Xiao
- - Xiang Zhong
+ - Kai Li 
+ - Zhekun Qi (zhekunqi@gatech.edu)
+ - Yiqiong Xiao (yxiao351@gatech.edu)
+ - Xiang Zhong (xzhong66@gatech.edu)
             
         
